@@ -1,0 +1,52 @@
+.banner {
+  @extend %banner-text;
+
+  .banner-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    transition: 0.5s ease;
+    h1 {margin: 0;}
+  }
+
+  .scroll-text {
+    margin-bottom: 60px;
+    #scroll-down {margin: 0;}
+
+    #arrow {
+      animation-name: upDown;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      position: relative;
+      margin: 0;
+    }
+
+    @keyframes upDown {
+      0% {top: 0px;}
+      50% {top: 10px;}
+      100% {top: 0px;}
+    }
+  }
+
+  .intro {
+    margin: auto;
+  }
+
+  .fa-bars {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    margin-left: 25px;
+    margin-top: 25px;
+
+    @media screen and (min-width: $bkpoint-md) {
+      font-size: 3rem;
+    }
+    
+    @media screen and (min-width: $bkpoint-lg) {
+      display: none;
+    }
+  }
+}

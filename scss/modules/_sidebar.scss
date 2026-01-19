@@ -1,0 +1,51 @@
+.side-bar {
+  @extend %sidebar;
+
+  .initials {
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+.scrolled {
+  color: black;
+}
+
+.side-bar.active {
+  left: 0;
+}
+
+.close-btn {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+
+  @media screen and (min-width: $bkpoint-lg) {
+    display: none;
+  }
+}
+
+.item {
+  @extend %sidebar-item;
+
+  a {
+    color: $color;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    
+    @media screen and (max-width: $bkpoint-sm) {
+      text-align: center;
+      padding: 10px 30px;
+    }
+  }
+}

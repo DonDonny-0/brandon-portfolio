@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $bkpoint-lg) {
+    width: 65%;
+  }
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-left: 1%;
+  padding-right: 1.5%;
+}
+
+.navbar__item:not(:last-child) {
+  border-right: 1px solid $color;
+}

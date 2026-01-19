@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0 3px 35px rgba(0,0,0,0.5);
+  top: -20%;
+
+  @media screen and (max-width: $bkpoint-lg) {
+    height: 100px;
+  }
+}
+
+.name {
+  font-size: 1.45rem;
+
+  @media screen and (max-width: $bkpoint-lg) {
+    // position: absolute;
+    margin-top: 1%;
+  }
+}
+
+.sticky {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: $bkpoint-lg) {
+    flex-direction: column;
+  }
+}
+
+.menu-btn {
+  display: block;
+  position: absolute;
+  top: -20px;
+  color: black;
+  font-size: 2rem;
+  margin: 25px;
+  cursor: pointer;
+
+  @media screen and (min-width: $bkpoint-lg) {
+    display: none;
+  }
+}

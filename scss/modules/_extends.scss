@@ -1,0 +1,83 @@
+%sidebar {
+  width: 225px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  overflow-y: auto;
+  transition: 0.3s ease;
+  transition-property: left;
+  z-index: 11;
+
+  @media screen and (max-width: $bkpoint-lg) {
+    left: -100%;
+    width: 210px;
+  }
+
+  @media screen and (max-width: $bkpoint-sm) {
+    width: 100%;
+  }
+}
+
+%sidebar-item {
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+  border-bottom: 0.1px solid $color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: $bkpoint-sm) {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+%project-grid {
+  width: 95%;
+  max-width: 1500px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+%card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.35em;
+  text-align: left;
+}
+
+%button {
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #278da4;
+  border-radius: 0.35em;
+  float: right;
+}
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: 600;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}

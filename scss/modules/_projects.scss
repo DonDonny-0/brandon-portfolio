@@ -1,0 +1,29 @@
+.main-content {
+  @extend %project-grid;
+  .card {
+    @extend %card;
+    h1 {font-size: 1.2rem;}
+  }
+}
+.main-content {
+  margin: 2rem 1rem;
+  text-align: center;
+
+  .project {
+    position: relative;
+
+    .project-link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+}
+.material-icons {
+  color: rgba(39, 141, 164, 0.8); 
+  font-size: 2.1em;
+}

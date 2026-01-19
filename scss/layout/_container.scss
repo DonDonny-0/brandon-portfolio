@@ -1,0 +1,12 @@
+.container {
+  margin: 0 2.5%;
+
+  @media screen and (min-width: $bkpoint-lg) {
+    margin: 0 10%;
+  }
+
+   @media screen and (min-width: $bkpoint-xl) {
+    margin-left: 325px;
+    margin-right: 100px;
+  }
+}

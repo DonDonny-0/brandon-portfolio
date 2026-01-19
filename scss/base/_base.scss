@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: white;
+}
+a {
+  color: #278da4;
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Bree Serif', serif;
+  margin: 0;
+  color: $color;
+}
+p {
+  margin-bottom: 1.25em;
+}
+img {
+  border-radius: 0.35em 0.35em 0 0;
+  height: 250px;
+  z-index: 1;
+}
