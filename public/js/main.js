@@ -27,27 +27,6 @@ $(document).ready(function() {
   let lastScrollPos = 0;
 
   window.onscroll = () => {stickyHeader()}
-
-  function stickyHeader() {
-    const currentScrollPos = window.pageYOffset;
-
-    if (currentScrollPos > 200) {
-      if (currentScrollPos < lastScrollPos) {
-        $('.header').css('visibility', 'visible').stop(true).animate({top: '0'});
-      }
-      else {
-        $('.header').stop(true).animate({top: '-100px'});
-      }
-    }
-    else {
-      if (currentScrollPos === 0) {
-        $('.header').stop(true).animate({top: '-100px'});
-      }
-    }
-
-    lastScrollPos = currentScrollPos;
-  }
-
 })
 
 window.addEventListener('scroll', () => {
@@ -61,11 +40,11 @@ const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
-// form.addEventListener('submit', e => {
-//   e.preventDefault();
+form.addEventListener('submit', e => {
+  e.preventDefault();
 
-//   validateInputs();
-// });
+  validateInputs();
+});
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;

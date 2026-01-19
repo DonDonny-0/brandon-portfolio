@@ -1,63 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
-	  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Brandon Thomas Murray</title>
-    <link rel="icon" href="img/favicon.png">
-    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
-    <link rel="stylesheet" href="css/application.css">
-    <link rel="stylesheet" href="js/animsition/animsition.min.css">
-    <link rel="stylesheet" href="js/slick/slick.css">
-    <link rel="stylesheet" href="js/slick/slick-theme.css">
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <div class="container">
-          <div class="banner-text">
-            <div class="intro">
-              <h1>My Name is <br> Brandon Thomas Murray</h1>
-              <p>I am a Web Developer</p>
-            </div>
-            <div class="scroll-text">
-              <h4 id="scroll-down">scroll down</h4>
-              <p id="arrow"><i class="fa-solid fa-angle-down"></i></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+
+<!-- Include Head Here-->
+<?php require 'partials/head.php' ?>
+
+
+    <!-- Include Banner Here-->
+    <?php require 'partials/banner.php' ?>
     <main>
-      <div class="side-bar">
-        <div class="close-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="initials">
-          <h1>BTM</h1>
-        </div>
-        <div class="menu">
-          <div class="item">
-            <a href="about-me.html"><i class="fas fa-desktop"></i>About Me</a>
-          </div>
-          <div class="item">
-            <a href="index.html"><i class="fas fa-table"></i>Portfolio</a>
-          </div>
-          <div class="item">
-            <a href="coding-examples.html"><i class="fas fa-th"></i>Examples</a>
-          </div>
-          <div class="item">
-            <a href="scs-scheme.html"><i class="fas fa-cogs"></i>SCS Scheme</a>
-          </div>
-          <div class="item">
-            <a href="index.html"><i class="fas fa-info-circle"></i>Contact Me</a>
-          </div>
-        </div>
-      </div>
+      
+      <!-- Include Sidebar Here-->
+      <?php require 'partials/sidebar.php' ?>
 
       <div class="container">
         <div class="main-content">
@@ -141,21 +92,7 @@
           </div>
         </div>
       </div>
-
     </main>
-    <footer>
-      <div class="footer-main">
-        <p id="credits">© 2025 Brandon Thomas Murray</p>
-        <p id="s-icons">
-          <a target="_blank" href="https://github.com/DonDonny-0"><span><i class="fa-brands fa-github"></i></span></a>
-          <a target="_blank" href="https://www.linkedin.com/in/brandon-thomas-murray-909082373"><span><i class="fa-brands fa-linkedin"></i></span></a>
-        </p>
-      </div>
-    </footer>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-    <script src="js/animsition/jquery.animsition.min.js"></script>
-    <script src="https://kit.fontawesome.com/03a8564f56.js" crossorigin="anonymous"></script>
-    <script defer src="js/main.js"></script>
-  </body>
-</html>
+
+<!-- Include Footer Here-->
+<?php require 'partials/footer.php' ?>
