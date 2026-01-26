@@ -10,8 +10,12 @@
   }
 }
 
-.scrolled {
-  color: black;
+#s-icons {
+  text-align: center;
+
+  i {
+    font-size: 2rem;
+  }
 }
 
 .side-bar.active {
@@ -21,15 +25,11 @@
 .close-btn {
   display: block;
   position: absolute;
-  color: white;
+  color: #278da7;
   font-size: 1.5rem;
   right: 0;
   margin: 25px;
   cursor: pointer;
-
-  @media screen and (min-width: $bkpoint-lg) {
-    display: none;
-  }
 }
 
 .item {
@@ -37,15 +37,19 @@
 
   a {
     color: $color;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
     display: block;
     padding: 5px 30px;
     line-height: 60px;
     
     @media screen and (max-width: $bkpoint-sm) {
-      text-align: center;
+      // text-align: center;
       padding: 10px 30px;
     }
+  }
+
+  i {
+    margin-right: 10px;
   }
 }

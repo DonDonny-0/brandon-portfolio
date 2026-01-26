@@ -7,14 +7,16 @@ $(document).ready(function() {
   })
 
   // jquery for expand and collapse the sidebar
-  $('.menu-btn').click(function() {
+  $('.hamburger').click(function() {
     $('.side-bar').addClass('active');
-    $('.menu-btn').css('display', 'none');
+    $('#container').css('left', '125px');
+    $('.hamburger').css('display', 'none');
   });
 
   $('.close-btn').click(function() {
     $('.side-bar').removeClass('active');
-    $('.menu-btn').css('display', 'block');
+    $('#container').css('left', '0px');
+    $('.hamburger').css('display', 'block');
   })
 
   $(document).ready(function() {
@@ -26,11 +28,11 @@ $(document).ready(function() {
 
   let lastScrollPos = 0;
 
-  window.onscroll = () => {stickyHeader()}
+  // window.onscroll = () => {stickyHeader()}
 })
 
 window.addEventListener('scroll', () => {
-  document.querySelector('.fa-bars').classList.toggle('scrolled', window.scrollY > 800);
+  document.querySelector('.hamburger-inner').classList.toggle('scrolled', window.scrollY > 800);
 });
 
 const form = document.getElementById('form');
@@ -41,9 +43,9 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 
 form.addEventListener('submit', e => {
-  e.preventDefault();
-
-  validateInputs();
+  if (!validateInputs()) {
+    e.preventDefault();
+  };
 });
 
 const setError = (element, message) => {
@@ -51,6 +53,7 @@ const setError = (element, message) => {
   const errorDisplay = inputControl.querySelector('.error');
 
   errorDisplay.innerText = message;
+  element.classList.remove('success');
   inputControl.classList.add('error');
   inputControl.classList.remove('success')
 }
@@ -60,7 +63,7 @@ const setSuccess = element => {
   const errorDisplay = inputControl.querySelector('.error');
 
   errorDisplay.innerText = '';
-  inputControl.classList.add('success');
+  element.classList.add('success');
   inputControl.classList.remove('error');
 };
 
@@ -73,26 +76,49 @@ const validateInputs = () => {
   const firstNameVal = firstName.value.trim();
   const lastNameVal = lastName.value.trim();
   const emailVal = email.value.trim();
+  const subjectVal = subject.value.trim();
+  const messageVal = message.value.trim();
+
+  var passed = true;
 
   if (firstNameVal === '') {
-    setError(firstName, 'First Name is Required');
+    setError(firstName, 'First Name is missing');
+    passed = false;
   } else {
     setSuccess(firstName);
   }
 
   if (lastNameVal === '') {
-    setError(lastName, 'Last Name is Required');
+    setError(lastName, 'Last Name is missing');
+    passed = false;
   } else {
     setSuccess(lastName)
   }
 
   if (emailVal === '') {
-    setError(email, 'Email is Required');
+    setError(email, 'Email is missing');
+    passed = false;
   } else if (!isValidEmail(emailVal)) {
-    setError(email, 'Provide a valid email address');
+    setError(email, 'Please provide a valid email address');
+    passed = false;
   } else {
     setSuccess(email);
   }
 
+  if (subjectVal === '') {
+    setError(subject, 'Subject is missing');
+    passed = false;
+  } else {
+    setSuccess(subject)
+  }
+
+  if (messageVal === '') {
+    setError(message, 'Message is missing');
+    passed = false;
+  } else {
+    setSuccess(message)
+  }
+
+  return passed;
 
 }

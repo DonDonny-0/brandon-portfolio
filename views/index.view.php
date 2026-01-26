@@ -2,6 +2,7 @@
 <!-- Include Head Here-->
 <?php require 'partials/head.php' ?>
 
+  <div id="container">
 
     <!-- Include Banner Here-->
     <?php require 'partials/banner.php' ?>
@@ -46,7 +47,19 @@
                 <a class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
               </div>      
             </div>
-          </div>              
+          </div>           
+          
+          <div class="project">
+            <div class="card"> 
+              <a href="https://github.com/DonDonny-0/netmatters-homepage/tree/php" class="project-link" target="_blank"></a>
+              <img src="img/project4.png" alt="">
+              <div class="details">
+                <h1>Netmatters Contact Page Replica</h1>
+                <p>A replication of the netmatters contact page, with a contact form using server-side validation using PHP.</p>
+                <a class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
+              </div>      
+            </div>
+          </div>
         </div>
       </div>
 
@@ -61,30 +74,48 @@
           </div>
 
           <div class="contact">
-            <form class="form" id="form" action="/">
-              <div class="input-control">
-                <label class="form__label--hidden" for="first-name">First Name</label>
-                <input class="form__input" type="text" id="first-name" name="first-name" placeholder="First Name*">
-                <div class="error"></div>
+            <form class="form" id="form" action="/" method="POST">
+              <div class="<?= $errors['success'] ?? '' ?>">
+                <?php if (isset($errors['success'])) : ?>
+                  <?= $success ?>
+                <?php endif; ?>
               </div>
-              <div class="input-control">
-                <label class="form__label--hidden" for="last-name">Last Name</label>
-                <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Last Name*">
-                <div class="error"></div>
-              </div>
-              <div class="input-control">
-                <label class="form__label--hidden" for="email">Email</label>
-                <input class="form__input" type="text" id="email" name="email" placeholder="Email*"><br>
-                <div class="error"></div>
-              </div>
-              <div class="input-control">
-                <label class="form__label--hidden" for="subject">Subject</label>
-                <input class="form__input" type="text" id="subject" name="subject" placeholder="Subject*"><br>
-                <div class="error"></div>
+              <div class="input-row">
+                <div class="text-input">
+                  <div class="input-control">
+                    <label class="form__label--hidden" for="first-name">First Name</label>
+                    <input class="form__input <?= $errors['first-name'] ?? '' ?>" type="text" id="first-name" name="first-name" placeholder="First Name*">
+                    <div class="error"></div>
+                  </div>
+                </div>
+
+                <div class="text-input">
+                  <div class="input-control">
+                    <label class="form__label--hidden" for="last-name">Last Name</label>
+                    <input class="form__input <?= $errors['last-name'] ?? '' ?>" type="text" id="last-name" name="last-name" placeholder="Last Name*">
+                    <div class="error"></div>
+                  </div>
+                </div>
+
+                <div class="text-input">
+                  <div class="input-control">
+                    <label class="form__label--hidden" for="email">Email</label>
+                    <input class="form__input <?= $errors['email'] ?? '' ?>" type="text" id="email" name="email" placeholder="Email*"><br>
+                    <div class="error"></div>
+                  </div>
+                </div>
+
+                <div class="text-input">
+                  <div class="input-control">
+                    <label class="form__label--hidden" for="subject">Subject</label>
+                    <input class="form__input <?= $errors['subject'] ?? '' ?>" type="text" id="subject" name="subject" placeholder="Subject*"><br>
+                    <div class="error"></div>
+                  </div>
+                </div>
               </div>
               <div class="input-control">
                 <label class="form__label--hidden" for="message">Message</label>
-                <textarea class="form__input" id="message" placeholder="Message*"></textarea>
+                <textarea class="form__input <?= $errors['message'] ?? '' ?>" id="message" name="message" placeholder="Message*"></textarea>
                 <div class="error"></div>
               </div>
               <button class="form__button" type="submit" id="submit">Submit</button>
@@ -93,6 +124,6 @@
         </div>
       </div>
     </main>
-
-<!-- Include Footer Here-->
-<?php require 'partials/footer.php' ?>
+    <!-- Include Footer Here-->
+    <?php require 'partials/footer.php' ?>
+  </div>

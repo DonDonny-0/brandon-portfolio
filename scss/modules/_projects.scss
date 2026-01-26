@@ -6,11 +6,16 @@
   }
 }
 .main-content {
-  margin: 2rem 1rem;
+  margin: 2rem auto;
   text-align: center;
 
   .project {
     position: relative;
+    transition: 0.5s transform;
+
+    &:hover {
+      transform: translate(0, -10px);
+    }
 
     .project-link {
       position: absolute;

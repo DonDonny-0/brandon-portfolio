@@ -22,4 +22,8 @@
       <a href="/"><i class="fas fa-info-circle"></i>Contact Me</a>
     </div>
   </div>
+  <p id="s-icons">
+    <a target="_blank" href="https://github.com/DonDonny-0"><span><i class="fa-brands fa-github"></i></span></a>
+    <a target="_blank" href="https://www.linkedin.com/in/brandon-thomas-murray-909082373"><span><i class="fa-brands fa-linkedin"></i></span></a>
+  </p>
 </div>

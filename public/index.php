@@ -1,12 +1,12 @@
 <?php
 
 use \Core\Router;
-// use Dotenv\Dotenv;
+use Dotenv\Dotenv;
 
-// require_once realpath(__DIR__ . "/vendor/autoload.php");
+require_once realpath(__DIR__ . "/vendor/autoload.php");
 
-// $dotenv = Dotenv::createImmutable(__DIR__);
-// $dotenv->load();
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 const BASE_PATH = __DIR__.'/../';
 
@@ -18,7 +18,7 @@ spl_autoload_register(function ($class) {
     require base_path("{$class}.php");
 });
 
-// require base_path('bootstrap.php');
+require base_path('bootstrap.php');
 
 $router = new Router();
 $routes = require base_path('routes.php');

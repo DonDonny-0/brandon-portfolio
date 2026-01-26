@@ -1,6 +1,11 @@
 <header>
   <div class="banner">
     <div class="container">
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
       <div class="banner-text">
         <div class="intro">
           <h1>My Name is <br> Brandon Thomas Murray</h1>
