@@ -19,7 +19,7 @@
       <a href="/scs-scheme"><i class="fas fa-cogs"></i>SCS Scheme</a>
     </div>
     <div class="item">
-      <a href="/"><i class="fas fa-info-circle"></i>Contact Me</a>
+      <a href="/#contact"><i class="fas fa-info-circle"></i>Contact Me</a>
     </div>
   </div>
   <p id="s-icons">

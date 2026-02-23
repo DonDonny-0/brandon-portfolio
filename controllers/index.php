@@ -48,5 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 return view("index.view.php", [
   'errors' => $errors,
-  'success' => $success
+  'success' => $success,
+  'heading' => 'My name is <br> Brandon Thomas Murray',
+  'subheading' => 'I am a web developer'
 ]);

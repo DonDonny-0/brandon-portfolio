@@ -1,3 +1,6 @@
 <?php
 
-view("examples.view.php");
+return view("examples.view.php", [
+  'heading' => 'Coding Examples',
+  'subheading' => 'See a bit behind my works'
+]);

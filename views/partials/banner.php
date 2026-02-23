@@ -8,8 +8,8 @@
       </button>
       <div class="banner-text">
         <div class="intro">
-          <h1>My Name is <br> Brandon Thomas Murray</h1>
-          <p>I am a Web Developer</p>
+          <h1><?= $heading ?></h1>
+          <p><?= $subheading ?></p>
         </div>
         <div class="scroll-text">
           <h4 id="scroll-down">scroll down</h4>

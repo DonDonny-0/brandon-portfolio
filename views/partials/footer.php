@@ -7,6 +7,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://dev.prismjs.com/prism.js"></script>
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js/animsition/jquery.animsition.min.js"></script>

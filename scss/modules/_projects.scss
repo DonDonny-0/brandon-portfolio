@@ -1,33 +1,52 @@
 .main-content {
   @extend %project-grid;
-  .card {
-    @extend %card;
-    h1 {font-size: 1.2rem;}
-  }
-}
-.main-content {
-  margin: 2rem auto;
-  text-align: center;
 
   .project {
     position: relative;
     transition: 0.5s transform;
+    .project-card {
+      @extend %card;
+      transition: 0.5s transform;
+      h1 {font-size: 1.2rem;}
 
-    &:hover {
-      transform: translate(0, -10px);
-    }
-
-    .project-link {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 1;
-      cursor: pointer;
+      &:hover {
+        transform: translate(0, -10px);
+      }
     }
   }
 }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px auto 0;
+  width: 600px;
+  grid-gap: 30px;
+  
+  i {
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.disc-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+
+  .disc-button {
+    padding: 10px;
+    border: 1px solid $color;
+    border-radius: 5px;
+    width: 25%;
+    font-size: 1.25rem;
+  }
+}
+
 .material-icons {
   color: rgba(39, 141, 164, 0.8); 
   font-size: 2.1em;

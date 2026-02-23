@@ -14,60 +14,66 @@
       <div class="container">
         <div class="main-content">
           <div class="project">
-            <div class="card">
-              <a href="https://github.com/DonDonny-0/netmatters-homepage" class="project-link" target="_blank"></a>
+            <div class="project-card">
+              <div class="project-link"></div>
               <img src="img/project1.png" alt="">
               <div class="details">
                 <h1>Netmatters Frontpage Replica</h1>
                 <p>A replication of the netmatters landing page, a great opportunity to learn and practice HTML and SASS.</p>
-                <a class="btn">View Project<i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/DonDonny-0/netmatters-homepage" class="btn">View Project<i class="fa-brands fa-github"></i></a>
               </div>
             </div>
           </div>
           
           <div class="project">
-            <div class="card">
-              <a href="https://github.com/DonDonny-0/anime_recommender_system" class="project-link" target="_blank"></a>
+            <div class="project-card">
               <img src="img/project2.png" alt="">
               <div class="details">
                 <h1>Anime ML Recommender System</h1>
                 <p>A system which recommends anime to the user based on their favourite shows, built using python.</p>
-                <a class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/DonDonny-0/anime_recommender_system" class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a>
               </div>        
             </div>
           </div>
           
-          <div class="project">
-            <div class="card"> 
-              <a href="https://github.com/DonDonny-0/js-array" class="project-link" target="_blank"></a>
+          <div class="project" id="proj3">
+            <div class="project-card"> 
               <img src="img/project3.png" alt="">
               <div class="details">
                 <h1>A Simple Image Generator</h1>
                 <p>Generate random images and assign it to your email. Built using Javascript, powered by Lorem Picsum.</p>
-                <a class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
+                <a href="https://github.com/DonDonny-0/js-array" class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
               </div>      
             </div>
           </div>           
           
           <div class="project">
-            <div class="card"> 
-              <a href="https://github.com/DonDonny-0/netmatters-homepage/tree/php" class="project-link" target="_blank"></a>
+            <div class="project-card"> 
               <img src="img/project4.png" alt="">
               <div class="details">
                 <h1>Netmatters Contact Page Replica</h1>
-                <p>A replication of the netmatters contact page, with a contact form using server-side validation using PHP.</p>
-                <a class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
+                <p>A replication of the netmatters contact page, with a contact form using server-side validation using PHP.</p><br>
+                <a href="https://github.com/DonDonny-0/netmatters-homepage/tree/php" class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
+              </div>      
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-card"> 
+              <img src="img/project5.png" alt="">
+              <div class="details">
+                <h1>Company Admin Panel</h1>
+                <p>An admin panel which uses Rest API and CRUD methods to handle data about companies and their employees, made using Laravel.</p>
+                <a href="https://github.com/DonDonny-0/company-admin-panel" class="btn" href="#">View Project<i class="fa-brands fa-github"></i></a> 
               </div>      
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
           <div class="get-in-touch">
             <h1>Get in Touch</h1>
-            <p>If you have anything you would like to ask me, or if you want to talk about development or collaboration, please get in touch with me. I'd love to talk to you.</p>
+            <p>If you have any questions, or would like to discuss development or potential collaboration, please feel free to get in touch. I’d be happy to chat.</p>
             <p>Please use the contact form as follows, or click my social links, I try to respond as soon as possible, usually 1-2 business days.</p>
             <p><strong>Email:<br></strong><a href="mailto:brand.t2004@icloud.com"> brand.t2004@icloud.com</a></p>
             <p><strong>Contact Number:<br></bbr></strong><a href="tel:07375042777"> 07375 042777</a></p>
@@ -124,6 +130,7 @@
         </div>
       </div>
     </main>
+
     <!-- Include Footer Here-->
     <?php require 'partials/footer.php' ?>
   </div>

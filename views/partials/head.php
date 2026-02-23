@@ -10,6 +10,7 @@
     <title>Brandon Thomas Murray</title>
     <link rel="icon" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/03a8564f56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
     <meta name="description" content="I am a highly trained web developer with a strong understanding of HTML, CSS, JavaScript, PHP and Laravel.">
     <link rel="stylesheet" href="css/application.css">
