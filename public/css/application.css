@@ -433,10 +433,6 @@ img {
   }
 }
 
-#container {
-  position: relative;
-}
-
 footer {
   margin-top: 10%;
 }
@@ -545,6 +541,8 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-template-rows: 450px 450px;
   grid-gap: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -751,7 +749,8 @@ footer {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 20px;
-  margin-top: 100px;
+  margin: 100px auto 0;
+  width: 80%;
 }
 
 .contact-info .get-in-touch {
